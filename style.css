@@ -1,0 +1,250 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    background-color:cadetblue ;
+}
+
+header{
+    height: 1800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+header h1{
+    color: aliceblue;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    animation: slideIn 1s ease forwards;
+}
+
+.model{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    font-size: 36px;
+    color: aliceblue;
+    animation: slideIn 1s ease forwards;
+}
+.model2{
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    color: aliceblue;
+   font-size: 25px;
+   animation: slideIn 1s ease forwards;
+}
+
+.learn-more-button {
+    display: block; 
+    width: 200px; 
+    height: 50px; 
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    text-align: center; 
+    line-height: 50px;
+    text-decoration: none; 
+    position: absolute;
+    top: 275px;
+    left: 60px;   
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    animation: slideIn 1s ease forwards;
+}
+
+
+.learn-more-button:hover {
+    background-color: #2980b9;
+    color: #fff; 
+}
+
+.photo{
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    width: 300px;
+    height: 270px;
+    border-radius: 15px;
+    animation: slideIn 1s ease forwards;
+}
+
+.photos{
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    width: 200px;
+    height: 170px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation: slideIn 1s ease forwards;
+}
+
+.scale{
+    position: absolute;
+    top: 700px;
+    left: 550px;
+    width: 200px;
+    height: 170px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation: slideIn 1s ease forwards;
+}
+
+.work{
+    position: absolute;
+    top: 700px;
+    left: 1100px;
+    width: 200px;
+    height: 170px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation: slideIn 1s ease forwards;
+}
+
+div{
+    width: 200px;
+    height: 100px;
+    animation: slideIn is ease forwards;
+}
+.first{
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    left: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 200px;
+    height: 120px;
+}
+.second{
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    left: 550px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 200px;
+    height: 120px;
+}
+.third{
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    left: 1100px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 200px;
+    height: 120px;
+
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition:background-color 0.6s ease;
+    
+}
+
+.active{
+    background-color: #717171;
+}
+.dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name:fade ;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
